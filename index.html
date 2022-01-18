@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Title Tag  -->
-    <title>Eshop - eCommerce HTML5 Template.</title>
+    <title>Amazon Discount Hub - Guaranteed Cashback</title>
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="images/favicon.png">
 	<!-- Web Font -->
@@ -175,9 +175,12 @@
 								<nav class="navbar navbar-expand-lg">
 									<div class="navbar-collapse">	
 										<div class="nav-inner">	
-											<ul class="nav main-menu menu navbar-nav">
-													<li class="active"><a href="#">Home</a></li>
-													<li><a href="#">Service</a></li>
+											<ul id="menu" class="nav main-menu menu navbar-nav">
+													<li class="menu-item"><a href="#">Home</a></li>
+													<li class="menu-item"><a href="#trending">Trending</a></li>
+													<li class="menu-item"><a href="#hotitem">Hot Items</a></li>
+													<li class="menu-item"><a href="#onsale">On Sale</a></li>
+													<li class="menu-item"><a href="#faq">FAQ's</a></li>
 												</ul>
 										</div>
 									</div>
@@ -192,6 +195,18 @@
 		<!--/ End Header Inner -->
 	</header>
 	<!--/ End Header -->
+<!-- Nav bar color on click changes karna abhi baki hai  -->
+	<script> 
+		var header = document.getElementById("menu");
+		var btns = header.getElementsByClassName("menu-item");
+		for (var i = 0; i < btns.length; i++) {
+		btns[i].addEventListener("click", function() {
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+		});
+		}
+	</script>
 	
 	<!-- Slider Area -->
 	<section class="hero-slider">
@@ -406,6 +421,7 @@
 														<a href="https://amzn.to/3rqFMlB">
 															<img class="default-img" src="images/default 5.jpg" alt="#">
 															<img class="hover-img" src="images/hover 5.jpg" alt="#">
+															<span class="price-dec">Gaming</span>
 														</a>
 														<div class="button-head">
 															
@@ -1610,6 +1626,7 @@
 				<!-- /End Single Banner  -->
 			</div>
 		</div>
+		<p id="hotitem"></p>
 	</section>
 	<!-- End Midium Banner -->
 	
@@ -1756,6 +1773,7 @@
                 </div>
             </div>
         </div>
+		<p id="onsale"></p>
     </section>
 	
 	<!-- Start Shop Home List  -->
@@ -2081,6 +2099,7 @@
 	
 	<!-- Start Footer Area -->
 	<footer class="footer">
+		<p id="faq"></p>
 		<!-- Footer Top -->
 		<div class="footer-top section">
 			<div class="container">
@@ -2113,13 +2132,12 @@
 					<div class="col-lg-2 col-md-6 col-12">
 						<!-- Single Widget -->
 						<div class="single-footer links">
-							<h4>Customer Service</h4>
+							<h4>How to get Chasback?</h4>
 							<ul>
-								<li><a href="#">Payment Methods</a></li>
-								<li><a href="#">Money-back</a></li>
-								<li><a href="#">Returns</a></li>
-								<li><a href="#">Shipping</a></li>
-								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">After 1 month of purchasing</a></li>
+								<li><a href="#">Mail your bill with the picture of the product</a></li>
+								<li><a href="#">The cashback is sent to your number in 6-7 working days </a></li>
+								<li><a href="#">We don't make calls</a></li>
 							</ul>
 						</div>
 						<!-- End Single Widget -->
@@ -2132,9 +2150,9 @@
 							<div class="contact">
 								<ul>
 									<li>Lets give benifits as much as possible</li>
-									<li>Supported by Startup India</li>
-									<li>We help in bulding your initial studio</li>
-									<li>+032 3456 7890</li>
+									<li>Supported by <strong>Startup India</strong> <img src="/images/icons/india.png" style="width: 50px; height: 50px;" alt="Indian Flag"></li>
+									<li>We help in bulding your gaming setup</li>
+									<li>Proud To Be Indian</li>
 								</ul>
 							</div>
 							<!-- End Single Widget -->
@@ -2157,7 +2175,7 @@
 					<div class="row">
 						<div class="col-lg-6 col-12">
 							<div class="left">
-								<p>Copyright © 2022 <a href="" style="text-decoration: none;" target="_blank">Amazon Prime</a>  -  All Rights Reserved.</p>
+								<p>Copyright © 2022 <a href="" style="text-decoration: none;" target="_blank">Amazon Discount Hub</a>  -  All Rights Reserved.</p>
 							</div>
 						</div>
 						<div class="col-lg-6 col-12">
