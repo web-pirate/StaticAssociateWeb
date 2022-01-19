@@ -204,7 +204,7 @@ Version:1.0
   padding: 13px 32px;
   border-radius: 0px;
   text-transform: uppercase;
-  transform: translate(135%, 570%);
+  /* transform: translate(135%, 570%); */
 }
 .btn:hover {
   color: #fff;
