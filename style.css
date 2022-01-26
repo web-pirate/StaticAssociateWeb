@@ -1273,6 +1273,7 @@ Version:1.0
   border: none;
   height: auto;
   z-index: 0;
+  transform: translate(140%, 550%);
 }
 .hero-slider .hero-text .btn:hover {
   background: #f7941d;
